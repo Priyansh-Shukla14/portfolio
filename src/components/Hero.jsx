@@ -92,7 +92,7 @@ export default function Hero() {
               animationFillMode: "forwards",
             }}
           >
-            Computer Science student at RVCE, building impactful solutions at the intersection of
+            Information Science student at RVCE, building impactful solutions at the intersection of
             <span style={{ color: "hsl(45 93% 58%)" }}> AI</span>,
             <span style={{ color: "hsl(45 93% 58%)" }}> IoT</span>, and
             <span style={{ color: "hsl(45 93% 58%)" }}> Full Stack Development</span>.
