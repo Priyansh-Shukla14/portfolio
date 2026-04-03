@@ -184,7 +184,7 @@ export default function Hero() {
             }}
           >
             <img
-              src="/images/PHOTO.jpeg"
+              src={`${import.meta.env.BASE_URL}images/PHOTO.jpeg`}
               alt="Priyansh Shukla"
               style={{
                 width: "100%",
