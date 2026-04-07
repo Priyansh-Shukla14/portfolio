@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 const port = parseInt(process.env.PORT || "5173");
-const basePath = "/portfolio/";
+const basePath = process.env.VERCEL ? "/" : "/portfolio/";
 
 export default defineConfig({
   base: basePath,
