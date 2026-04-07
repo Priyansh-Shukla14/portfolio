@@ -3,7 +3,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="hero-gradient"
+      className="hero-gradient hero-section"
       style={{
         minHeight: "100vh",
         display: "flex",
@@ -42,9 +42,9 @@ export default function Hero() {
         }}
       />
 
-      <div style={{ maxWidth: "1000px", width: "100%", display: "flex", alignItems: "center", gap: "60px" }}>
+      <div className="hero-content" style={{ maxWidth: "1000px", width: "100%", display: "flex", alignItems: "center", gap: "60px" }}>
         {/* Left: Text */}
-        <div style={{ flex: 1, minWidth: 0 }}>
+        <div className="hero-text" style={{ flex: 1, minWidth: 0 }}>
           <div
             className="animate-fadeInUp opacity-0"
             style={{ animationFillMode: "forwards", marginBottom: "20px" }}
@@ -112,7 +112,7 @@ export default function Hero() {
             <a href="#projects" className="btn-primary">
               View Projects
               <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </a>
             <a href="#contact" className="btn-outline">
@@ -126,7 +126,7 @@ export default function Hero() {
               style={{ gap: "6px" }}
             >
               <svg height="16" viewBox="0 0 16 16" width="16" fill="currentColor">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
               </svg>
               GitHub
             </a>
@@ -167,8 +167,9 @@ export default function Hero() {
         </div>
 
         {/* Right: Photo placeholder */}
-        <div style={{ flexShrink: 0 }}>
+        <div className="hero-image" style={{ flexShrink: 0 }}>
           <div
+            className="hero-image-inner"
             style={{
               width: "260px",
               height: "300px",
@@ -200,19 +201,30 @@ export default function Hero() {
 
       <style>{`
         @media (max-width: 768px) {
-          #hero > div:first-of-type {
-            flex-direction: column !important;
-            text-align: center;
+          .hero-section {
+            padding: 80px 20px 40px !important;
           }
-          #hero > div:first-of-type > div:first-child p {
+          .hero-content {
+            flex-direction: column-reverse !important;
+            text-align: center;
+            gap: 40px !important;
+            margin-top: 20px;
+          }
+          .hero-text p {
             margin-left: auto;
             margin-right: auto;
           }
-          #hero > div:first-of-type > div:first-child > div[style*="flex"] {
+          .hero-text > div[style*="flex"] {
             justify-content: center;
           }
-          #hero > div:first-of-type > div:last-child {
-            display: none;
+          .hero-image-inner {
+            width: 220px !important;
+            height: 250px !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .hero-content {
+            margin-top: 40px;
           }
         }
       `}</style>

@@ -10,9 +10,9 @@ export default function About() {
     >
       <div className="section-divider" style={{ marginBottom: "80px" }} />
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+      <div className="about-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
         {/* Left: Visual */}
-        <div style={{ position: "relative" }}>
+        <div className="about-visual" style={{ position: "relative" }}>
           <div
             className="animate-float"
             style={{
@@ -169,12 +169,17 @@ export default function About() {
 
       <style>{`
         @media (max-width: 768px) {
-          #about > div:last-child {
+          .about-grid {
             grid-template-columns: 1fr !important;
-            gap: 40px !important;
+            gap: 50px !important;
           }
-          #about > div:last-child > div:first-child {
-            display: none;
+          .about-visual {
+            order: 2;
+          }
+        }
+        @media (max-width: 480px) {
+          #about {
+            padding: 60px 20px !important;
           }
         }
       `}</style>

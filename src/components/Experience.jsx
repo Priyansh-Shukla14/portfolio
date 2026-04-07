@@ -16,7 +16,7 @@ export default function Experience() {
           >
             My <span className="gradient-text">Journey</span>
           </h2>
-          
+
         </div>
 
         {experiences.map((exp) => (
@@ -136,6 +136,13 @@ export default function Experience() {
           </div>
         ))}
       </div>
+      <style>{`
+        @media (max-width: 600px) {
+          #experience {
+            padding: 60px 20px !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

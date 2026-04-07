@@ -22,6 +22,7 @@ export default function Achievements() {
         </div>
 
         <div
+          className="achievements-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",
@@ -107,13 +108,16 @@ export default function Achievements() {
 
       <style>{`
         @media (max-width: 900px) {
-          #achievements > div > div:last-child {
+          .achievements-grid {
             grid-template-columns: repeat(2, 1fr) !important;
           }
         }
         @media (max-width: 600px) {
-          #achievements > div > div:last-child {
+          .achievements-grid {
             grid-template-columns: 1fr !important;
+          }
+          #achievements {
+            padding: 60px 20px !important;
           }
         }
       `}</style>

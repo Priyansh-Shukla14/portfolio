@@ -83,7 +83,7 @@ export default function Skills() {
           </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", marginBottom: "60px" }}>
+        <div className="skills-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", marginBottom: "60px" }}>
           {/* Category tabs + bars */}
           <div
             style={{
@@ -137,7 +137,7 @@ export default function Skills() {
             <h3 style={{ fontSize: "1rem", fontWeight: "700", marginBottom: "24px", color: "hsl(45 100% 90%)" }}>
               Technologies I Work With
             </h3>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "14px" }}>
+            <div className="tech-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "14px" }}>
               {techLogos.map((tech) => (
                 <div
                   key={tech.name}
@@ -176,8 +176,16 @@ export default function Skills() {
 
       <style>{`
         @media (max-width: 768px) {
-          #skills > div > div:nth-child(3) {
+          .skills-grid {
             grid-template-columns: 1fr !important;
+          }
+          #skills {
+            padding: 60px 20px !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .tech-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
           }
         }
       `}</style>
