@@ -109,13 +109,29 @@ export default function Hero() {
               animationFillMode: "forwards",
             }}
           >
-            <a href="#projects" className="btn-primary">
+            <a 
+              href="/projects" 
+              className="btn-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                window.history.pushState({}, "", "/projects");
+                window.dispatchEvent(new Event("popstate"));
+              }}
+            >
               View Projects
               <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </a>
-            <a href="#contact" className="btn-outline">
+            <a 
+              href="/contact" 
+              className="btn-outline"
+              onClick={(e) => {
+                e.preventDefault();
+                window.history.pushState({}, "", "/contact");
+                window.dispatchEvent(new Event("popstate"));
+              }}
+            >
               Get In Touch
             </a>
             <a
