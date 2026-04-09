@@ -3,7 +3,7 @@ export const skills = {
     { name: "HTML & CSS", level: 100 },
     { name: "JavaScript", level: 100 },
     { name: "React JS", level: 100 },
-    { name: "Tailwind CSS", level:100 },
+    { name: "Tailwind CSS", level: 100 },
   ],
   "Backend & Tools": [
     { name: "Node.js", level: 100 },
@@ -20,102 +20,102 @@ export const skills = {
 export const projects = [
   {
     id: 1,
-title: "AI for Bharat",
-subtitle: "AI Coding Coach",
+    title: "AI for Bharat",
+    subtitle: "AI Coding Coach",
 
-shortDesc: "An AI-powered coding coach platform currently under development to help students learn programming with guided feedback and explanations.",
+    shortDesc: "An AI-powered coding coach platform currently under development to help students learn programming with guided feedback and explanations.",
 
-techStack: ["React", "Node.js", "Express", "MongoDB"],
+    techStack: ["React", "Node.js", "Express", "MongoDB"],
 
-fullDescription:
-  "AI for Bharat is an AI-powered coding education platform currently under development, aimed at helping students learn programming through guided problem-solving. The platform focuses on providing feedback on code, identifying mistakes, and encouraging logical thinking through step-by-step explanations. It is being designed to support learners at different levels by adapting to their progress and improving their problem-solving skills.",
+    fullDescription:
+      "AI for Bharat is an AI-powered coding education platform currently under development, aimed at helping students learn programming through guided problem-solving. The platform focuses on providing feedback on code, identifying mistakes, and encouraging logical thinking through step-by-step explanations. It is being designed to support learners at different levels by adapting to their progress and improving their problem-solving skills.",
 
-problemStatement:
-  "Many students struggle to learn programming due to a lack of proper guidance and feedback while practicing problems. Existing platforms often provide solutions without helping users understand the reasoning behind them, making it difficult to build strong problem-solving skills.",
+    problemStatement:
+      "Many students struggle to learn programming due to a lack of proper guidance and feedback while practicing problems. Existing platforms often provide solutions without helping users understand the reasoning behind them, making it difficult to build strong problem-solving skills.",
 
-tools: ["React JS", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    tools: ["React JS", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
 
-techniques: ["Code Analysis", "Pattern-based Error Detection", "Guided Problem Solving", "Incremental Learning Approach"],
+    techniques: ["Code Analysis", "Pattern-based Error Detection", "Guided Problem Solving", "Incremental Learning Approach"],
 
-keyFeatures: [
-  "Code feedback system for identifying mistakes",
-  "Step-by-step guided explanations",
-  "Practice-based learning approach",
-  "Progress tracking for users",
-  "Clean and simple user interface",
-  "Scalable architecture for future AI integration",
-],
+    keyFeatures: [
+      "Code feedback system for identifying mistakes",
+      "Step-by-step guided explanations",
+      "Practice-based learning approach",
+      "Progress tracking for users",
+      "Clean and simple user interface",
+      "Scalable architecture for future AI integration",
+    ],
 
-challenges:
-  "Designing a system that provides meaningful feedback without directly giving away answers is a key challenge. The focus is on building a guided learning experience that helps users think and solve problems independently rather than relying on direct solutions.",
+    challenges:
+      "Designing a system that provides meaningful feedback without directly giving away answers is a key challenge. The focus is on building a guided learning experience that helps users think and solve problems independently rather than relying on direct solutions.",
     github: "https://github.com/Priyansh-Shukla14/AI-FOR-BHARAT-AWS-HACKATHON.git",
     demo: "#",
     color: "#F5C842",
   },
   {
     id: 2,
-title: "Smart Helmet",
-subtitle: "Accident Prevention System",
+    title: "Smart Helmet",
+    subtitle: "Accident Prevention System",
 
-shortDesc: "IoT-based smart helmet that detects accidents in real-time and automatically alerts emergency contacts with GPS location.",
+    shortDesc: "IoT-based smart helmet that detects accidents in real-time and automatically alerts emergency contacts with GPS location.",
 
-techStack: ["Arduino", "IoT", "Twilio API", "Google Maps API"],
+    techStack: ["Arduino", "IoT", "Twilio API", "Google Maps API"],
 
-fullDescription:
-  "Smart Helmet for Accident Prevention is an IoT-based safety system integrated into a motorcycle helmet. The system uses multiple sensors such as accelerometer, gyroscope, and GPS modules to detect accident events in real-time. Once an accident is detected, it instantly sends an SOS alert along with precise GPS coordinates to pre-registered emergency contacts using Twilio, while location tracking is handled via Google Maps API.",
+    fullDescription:
+      "Smart Helmet for Accident Prevention is an IoT-based safety system integrated into a motorcycle helmet. The system uses multiple sensors such as accelerometer, gyroscope, and GPS modules to detect accident events in real-time. Once an accident is detected, it instantly sends an SOS alert along with precise GPS coordinates to pre-registered emergency contacts using Twilio, while location tracking is handled via Google Maps API.",
 
-problemStatement:
-  "Road accidents claim over 150,000 lives annually in India, and a major reason for fatalities is delayed medical assistance. In many cases, especially in remote areas, victims remain unattended for long periods due to the lack of an automatic alert system.",
+    problemStatement:
+      "Road accidents claim over 150,000 lives annually in India, and a major reason for fatalities is delayed medical assistance. In many cases, especially in remote areas, victims remain unattended for long periods due to the lack of an automatic alert system.",
 
-tools: ["Arduino Uno", "MPU-6050 Accelerometer", "NEO-6M GPS Module", "Twilio SMS API", "Google Maps API", "C++"],
+    tools: ["Arduino Uno", "MPU-6050 Accelerometer", "NEO-6M GPS Module", "Twilio SMS API", "Google Maps API", "C++"],
 
-techniques: ["Sensor Fusion", "Threshold-based Crash Detection", "Real-time GPS Tracking", "IoT Communication Protocols", "Signal Processing"],
+    techniques: ["Sensor Fusion", "Threshold-based Crash Detection", "Real-time GPS Tracking", "IoT Communication Protocols", "Signal Processing"],
 
-keyFeatures: [
-  "Multi-axis crash detection with high accuracy",
-  "Automatic SOS with GPS coordinates via SMS",
-  "False alarm prevention using smart filtering",
-  "Helmet-on detection with tamper alerts",
-  "Battery level monitoring and alerts",
-  "Direct emergency contact notification",
-],
+    keyFeatures: [
+      "Multi-axis crash detection with high accuracy",
+      "Automatic SOS with GPS coordinates via SMS",
+      "False alarm prevention using smart filtering",
+      "Helmet-on detection with tamper alerts",
+      "Battery level monitoring and alerts",
+      "Direct emergency contact notification",
+    ],
 
-challenges:
-  "Reducing false positives was a key challenge, as normal road conditions like potholes should not trigger an alert. This was addressed by implementing a multi-stage detection approach using sensor fusion and time-window analysis to accurately distinguish real accidents from noise or sudden movements.",
+    challenges:
+      "Reducing false positives was a key challenge, as normal road conditions like potholes should not trigger an alert. This was addressed by implementing a multi-stage detection approach using sensor fusion and time-window analysis to accurately distinguish real accidents from noise or sudden movements.",
     github: "https://github.com/Priyansh-Shukla14/Smart-Helmet-For-Riders-.git",
     demo: "#",
     color: "#60A5FA",
   },
   {
     id: 3,
-title: "Anti-Poaching Tripwire",
-subtitle: "Wildlife Protection System",
+    title: "Anti-Poaching Tripwire",
+    subtitle: "Wildlife Protection System",
 
-shortDesc: "IoT-based perimeter monitoring system that detects suspicious sounds and alerts authorities about potential poaching activities.",
+    shortDesc: "IoT-based perimeter monitoring system that detects suspicious sounds and alerts authorities about potential poaching activities.",
 
-techStack: ["ESP32", "IoT", "Audio Processing", "Embedded Systems"],
+    techStack: ["ESP32", "IoT", "Audio Processing", "Embedded Systems"],
 
-fullDescription:
-  "The Anti-Poaching Tripwire System is an IoT-based wildlife protection solution designed to monitor forest areas for suspicious activities. The system uses microphones to continuously capture environmental sounds and detect abnormal audio patterns such as gunshots or unusual disturbances. When such sounds are detected, the system stores the audio and flags it for further analysis, helping authorities identify potential poaching activities.",
+    fullDescription:
+      "The Anti-Poaching Tripwire System is an IoT-based wildlife protection solution designed to monitor forest areas for suspicious activities. The system uses microphones to continuously capture environmental sounds and detect abnormal audio patterns such as gunshots or unusual disturbances. When such sounds are detected, the system stores the audio and flags it for further analysis, helping authorities identify potential poaching activities.",
 
-problemStatement:
-  "Wildlife poaching poses a serious threat to biodiversity, especially in remote forest areas where monitoring is limited. Traditional surveillance methods are expensive and not scalable, making it difficult for forest officials to continuously track illegal activities.",
+    problemStatement:
+      "Wildlife poaching poses a serious threat to biodiversity, especially in remote forest areas where monitoring is limited. Traditional surveillance methods are expensive and not scalable, making it difficult for forest officials to continuously track illegal activities.",
 
-tools: ["ESP32", "MAX4466 Microphone", "INMP441 Microphone", "SD Card Module", "Python (for analysis)"],
+    tools: ["ESP32", "MAX4466 Microphone", "INMP441 Microphone", "SD Card Module", "Python (for analysis)"],
 
-techniques: ["Audio Signal Processing", "Threshold-based Sound Detection", "Chunk-based Audio Analysis", "Embedded System Design"],
+    techniques: ["Audio Signal Processing", "Threshold-based Sound Detection", "Chunk-based Audio Analysis", "Embedded System Design"],
 
-keyFeatures: [
-  "Real-time sound-based trigger detection",
-  "Audio recording for suspicious events",
-  "Low-power embedded deployment",
-  "Offline audio analysis for classification",
-  "Simple and cost-effective design",
-  "Scalable for multiple forest locations",
-],
+    keyFeatures: [
+      "Real-time sound-based trigger detection",
+      "Audio recording for suspicious events",
+      "Low-power embedded deployment",
+      "Offline audio analysis for classification",
+      "Simple and cost-effective design",
+      "Scalable for multiple forest locations",
+    ],
 
-challenges:
-  "Distinguishing meaningful sounds like gunshots from background noise was a major challenge. This was handled using threshold-based triggering combined with chunk-level audio analysis, ensuring that only relevant audio segments are captured while reducing unnecessary recordings.",
+    challenges:
+      "Distinguishing meaningful sounds like gunshots from background noise was a major challenge. This was handled using threshold-based triggering combined with chunk-level audio analysis, ensuring that only relevant audio segments are captured while reducing unnecessary recordings.",
     github: "https://github.com/Priyansh-Shukla14/Anti-Poaching-System.git",
     demo: "#",
     color: "#34D399",
@@ -197,5 +197,11 @@ export const achievements = [
     year: "2025",
     desc: "Achieved 8th position in Hackemon CTF held at RV College of Engineering, competing against teams across multiple colleges.",
     icon: "🎯",
+  },
+  {
+    title: "Best Organiser of the Month – Rotaract RVCE",
+    year: "Jan 2026",
+    desc: "Awarded the 'Best Organiser of the Month' certificate for January 2026 in recognition of dedicated service at Rotaract Club RVCE.",
+    icon: "🌟",
   },
 ];
