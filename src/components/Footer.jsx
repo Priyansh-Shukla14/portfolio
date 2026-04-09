@@ -31,9 +31,6 @@ export default function Footer() {
           >
             PS
           </div>
-          <span style={{ fontWeight: "600", color: "hsl(220 10% 55%)", fontSize: "0.875rem" }}>
-            &copy; {year} Priyansh Shukla. All rights reserved.
-          </span>
         </div>
 
         <div style={{ display: "flex", gap: "12px" }}>

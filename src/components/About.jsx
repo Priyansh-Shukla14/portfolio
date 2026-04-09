@@ -115,10 +115,18 @@ export default function About() {
           </div>
         </div>
 
-        {/* Right: Text */}
         <div>
           <div className="section-tag">About Me</div>
-
+          <h2
+            style={{
+              fontSize: "clamp(2rem, 4vw, 2.8rem)",
+              fontWeight: "800",
+              marginBottom: "16px",
+              letterSpacing: "-0.02em",
+            }}
+          >
+            Get to <span className="gradient-text">Know</span> Me
+          </h2>
 
           <p style={{ color: "hsl(220 10% 60%)", lineHeight: "1.8", marginBottom: "20px", fontSize: "1rem" }}>
             I am Priyansh, a sophomore at <span style={{ color: "hsl(45 93% 58%)", fontWeight: "600" }}>RV College of Engineering</span>. I am actively learning Data Structures &amp; Algorithms and Full Stack Development, participating in Hackathons, and serving as an Organiser in the <span style={{ color: "hsl(45 93% 58%)", fontWeight: "600" }}>Rotaract Club of RVCE</span>.

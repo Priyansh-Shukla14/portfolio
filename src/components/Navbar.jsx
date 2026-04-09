@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Achievements", href: "#achievements" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Skills", href: "/skills" },
+  { label: "Projects", href: "/projects" },
+  { label: "Experience", href: "/experience" },
+  { label: "Achievements", href: "/achievements" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -34,9 +34,14 @@ export default function Navbar() {
     >
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: "68px" }}>
         <a
-          href="#hero"
+          href="/"
           style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}
-          onClick={() => setMenuOpen(false)}
+          onClick={(e) => {
+            e.preventDefault();
+            window.history.pushState({}, "", "/");
+            window.dispatchEvent(new Event("popstate"));
+            setMenuOpen(false);
+          }}
         >
           <span
             style={{
@@ -65,6 +70,13 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
+              onClick={(e) => {
+                e.preventDefault();
+                // If hosted on GitHub pages under a subdirectory, window.location.pathname handles the base, but pushState needs to preserve it if necessary. 
+                // However, since vercel is the deploy target, absolute paths like `/about` are fine.
+                window.history.pushState({}, "", link.href);
+                window.dispatchEvent(new Event("popstate"));
+              }}
               style={{
                 color: "hsl(220 10% 70%)",
                 textDecoration: "none",
@@ -123,7 +135,12 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              onClick={() => setMenuOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                window.history.pushState({}, "", link.href);
+                window.dispatchEvent(new Event("popstate"));
+                setMenuOpen(false);
+              }}
               style={{
                 color: "hsl(220 10% 70%)",
                 textDecoration: "none",
