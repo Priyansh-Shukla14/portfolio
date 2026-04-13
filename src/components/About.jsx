@@ -10,6 +10,18 @@ export default function About() {
     >
       <div className="section-divider" style={{ marginBottom: "80px" }} />
 
+      <div style={{ textAlign: "center", marginBottom: "60px" }}>
+        <h2
+          style={{
+            fontSize: "clamp(2rem, 4vw, 2.8rem)",
+            fontWeight: "800",
+            letterSpacing: "-0.02em",
+          }}
+        >
+          About <span className="gradient-text">Me</span>
+        </h2>
+      </div>
+
       <div className="about-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
         {/* Left: Visual */}
         <div className="about-visual" style={{ position: "relative" }}>
@@ -116,17 +128,6 @@ export default function About() {
         </div>
 
         <div>
-          <div className="section-tag">About Me</div>
-          <h2
-            style={{
-              fontSize: "clamp(2rem, 4vw, 2.8rem)",
-              fontWeight: "800",
-              marginBottom: "16px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Get to <span className="gradient-text">Know</span> Me
-          </h2>
 
           <p style={{ color: "hsl(220 10% 60%)", lineHeight: "1.8", marginBottom: "20px", fontSize: "1rem" }}>
             I am Priyansh, a sophomore at <span style={{ color: "hsl(45 93% 58%)", fontWeight: "600" }}>RV College of Engineering</span>. I am actively learning Data Structures &amp; Algorithms and Full Stack Development, participating in Hackathons, and serving as an Organiser in the <span style={{ color: "hsl(45 93% 58%)", fontWeight: "600" }}>Rotaract Club of RVCE</span>.

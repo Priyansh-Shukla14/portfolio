@@ -67,20 +67,15 @@ export default function Skills() {
     >
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: "60px" }}>
-          <div className="section-tag">Skills</div>
           <h2
             style={{
               fontSize: "clamp(2rem, 4vw, 2.8rem)",
               fontWeight: "800",
-              marginBottom: "16px",
               letterSpacing: "-0.02em",
             }}
           >
-            My <span className="gradient-text">Technical Arsenal</span>
+            My <span className="gradient-text">Skills</span>
           </h2>
-          <p style={{ color: "hsl(220 10% 55%)", maxWidth: "520px", margin: "0 auto", lineHeight: "1.7" }}>
-            A curated set of tools, languages, and frameworks I use to turn ideas into reality.
-          </p>
         </div>
 
         <div className="skills-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", marginBottom: "60px" }}>
